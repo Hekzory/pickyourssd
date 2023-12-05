@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>PickYourSSD</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,500,700" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+  </head>
+  <body class="text-gray-700 bg-zinc-100 website-grid-container" style="font-family: 'Source Sans Pro', sans-serif">
+    <div class="mx-auto px-6 py-4 flex justify-center items-center fixed-nav website-grid-logo">
+      <a href="#" class="flex items-center">
+        <img src="icons/highres.png" class="h-8 mr-3" alt="Логотип" />
+        <h1 id="main-title" class="font-bold text-2xl lg:text-4xl">PickYourSSD</h1>
+      </a>
+    </div>
+    <nav class="mx-auto px-6 py-4 flex justify-center items-center fixed-nav website-grid-header">
+      <div class="lg:block">
+        <ul class="inline-flex">
+          <li>
+            <a class="px-4 hover:text-gray-800" href="index.html"><button class="bg-transparent hover:bg-blue-700 hover:text-white font-bold py-2 px-4 rounded-full focus:ring active:bg-blue-500">Главная</button></a>
+          </li>
+          <li>
+            <a class="px-4 hover:text-gray-800" href="features.html"><button class="bg-transparent hover:bg-blue-700 hover:text-white font-bold py-2 px-4 rounded-full focus:ring active:bg-blue-500">Узнать</button></a>
+          </li>
+          <li>
+            <a class="px-4 hover:text-gray-800" href="cart.html"><button class="bg-transparent hover:bg-blue-700 hover:text-white font-bold py-2 px-4 rounded-full focus:ring active:bg-blue-500">Купить</button></a>
+          </li>
+          <li>
+            <a class="px-4 hover:text-gray-800" href="about.html"><button class="bg-transparent hover:bg-blue-700 hover:text-white font-bold py-2 px-4 rounded-full focus:ring active:bg-blue-500">О проекте</button></a>
+          </li>
+          <li>
+            <a class="px-4 hover:text-gray-800" href="contact.html"><button class="bg-transparent hover:bg-blue-700 hover:text-white font-bold py-2 px-4 rounded-full focus:ring active:bg-blue-500">Связь</button></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="website-grid-sidebar flex flex-col">
+      <p class="font-bold text-xl my-2 pb-4">Корзина-калькулятор покупок</p>
+      <div id="sb-content" class="flex flex-col"></div>
+    </section>
+
+    <main class="mx-auto flex flex-col website-grid-content">
+      <section class="features-grid-container">
+        <div class="feature-grid-item feature-grid-first" id="item-1">
+          <i class="fa-solid fa-computer fa-2xl"></i>
+          <p>Gen5 NVMe SSD</p>
+          <p>20000</p>
+          <button onclick="addProduct(1)" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded m-2">Добавить</button>
+        </div>
+        <div class="feature-grid-item feature-grid-second" id="item-2">
+          <i class="fa-solid fa-server fa-2xl"></i>
+          <p>Gen4 NVMe SSD</p>
+          <p>10000</p>
+          <button onclick="addProduct(2)" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded m-2">Добавить</button>
+        </div>
+        <div class="feature-grid-item feature-grid-third" id="item-3">
+          <i class="fa-solid fa-laptop fa-2xl"></i>
+          <p>Gen3 NVMe SSD</p>
+          <p>5000</p>
+          <button onclick="addProduct(3)" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded m-2">Добавить</button>
+        </div>
+        <div class="feature-grid-item feature-grid-fourth" id="item-4">
+          <i class="fa-solid fa-desktop fa-2xl"></i>
+          <p>Enterprise-grade SATA SSD</p>
+          <p>9000</p>
+          <button onclick="addProduct(4)" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded m-2">Добавить</button>
+        </div>
+        <div class="feature-grid-item feature-grid-fifth" id="item-5">
+          <i class="fa-solid fa-floppy-disk fa-2xl"></i>
+          <p>Обычный SATA SSD</p>
+          <p>3000</p>
+          <button onclick="addProduct(5)" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded m-2">Добавить</button>
+        </div>
+        <div class="feature-grid-item feature-grid-sixth" id="item-6">
+          <i class="fa-solid fa-keyboard fa-2xl"></i>
+          <p>SATA-кабель</p>
+          <p>200</p>
+          <button onclick="addProduct(6)" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded m-2">Добавить</button>
+        </div>
+        <div class="feature-grid-item feature-grid-seventh" id="item-7">
+          <i class="fa-solid fa-database fa-2xl"></i>
+          <p>Enterprise Gen5 NVMe SSD</p>
+          <p>20000</p>
+          <button onclick="addProduct(7)" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded m-2">Добавить</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-gray-200 footer-grid-container website-grid-footer" id="footer">
+      <div class="footer-about">
+        <h2 class="mb-6 text-lg font-bold text-gray-900 uppercase">О нас</h2>
+        <p class="text-gray-500 font-medium">Наш сайт предоставляет возможность узнать об особенностях твердотельных накопителей, а также осуществлять покупки.</p>
+      </div>
+      <div class="footer-links">
+        <h2 class="mb-6 text-lg font-bold text-gray-900 uppercase">Ссылки</h2>
+        <ul class="text-gray-500 font-medium">
+          <li class="my-2">
+            <a href="about.html" class="hover:underline">О нас</a>
+          </li>
+          <li class="my-2">
+            <a href="contact.html" class="hover:underline">Контакты</a>
+          </li>
+          <li class="my-2">
+            <a href="features.html" class="hover:underline">Узнать больше</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-adv">
+        <h2 class="mb-6 text-lg font-bold text-gray-900 uppercase">Партнёры</h2>
+        <ul class="text-gray-500 font-medium">
+          <li class="my-2">
+            <a href="#" class="hover:underline">Место для рекламы 1</a>
+          </li>
+          <li class="my-2">
+            <a href="#" class="hover:underline">Место для рекламы 2</a>
+          </li>
+          <li class="my-2">
+            <a href="#" class="hover:underline">Место для рекламы 3</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h2 class="mb-6 text-lg font-bold text-gray-900 uppercase">Связь</h2>
+        <div class="flex justify-start items-center">
+          <a href="https://github.com/hekzory" class="p-1 text-lg text-gray-700 footer-btn-container"
+            ><i class="fab fa-github footer-btn"><div class="icon-overlay"></div></i
+          ></a>
+          <a href="mailto:ssd@tsv.one" class="p-1 text-lg text-gray-700 footer-btn-container"
+            ><i class="fas fa-envelope footer-btn"><div class="icon-overlay"></div></i
+          ></a>
+          <a href="contact.html" class="p-1 text-lg text-gray-700 footer-btn-container"
+            ><i class="fas fa-link footer-btn"><div class="icon-overlay"></div></i
+          ></a>
+        </div>
+      </div>
+      <div class="footer-text bg-gray-300">Copyright © PickYourSSD 2023-2023. Все права защищены.</div>
+    </footer>
+
+    <script>
+      function Product(id, name, price) {
+        this.id = parseInt(id);
+        this.name = name;
+        this.price = parseInt(price);
+      }
+
+      function ProductCart() {
+        this.objects = [];
+
+        this.addObject = function (object) {
+          let existingObject = this.objects.find((obj) => obj.id === object.id);
+          if (existingObject) {
+            existingObject.count += 1;
+          } else {
+            object.count = 1;
+            object.inc = function () {
+              this.count += 1;
+            }
+            object.dec = function () {
+              if (this.count > 1) {
+                this.count -= 1;
+              }
+            }
+            this.objects.push(object);
+          }
+        }
+
+        this.calculateTotalPrice = function () {
+          let totalPrice = 0;
+          for (let i = 0; i < this.objects.length; i++) {
+            totalPrice += this.objects[i].price * this.objects[i].count;
+          }
+          return totalPrice;
+        }
+      }
+
+      let cart = new ProductCart();
+
+      function updateSideBar() {
+        let sb = document.getElementById("sb-content")
+        sb.innerHTML = ""
+
+        for (let obj of cart.objects) {
+          let div = document.createElement("div")
+          div.classList.add("flex")
+          div.classList.add("flex-row")
+          div.classList.add("product-box")
+
+          let divname = document.createElement("div")
+          divname.innerHTML = obj.name
+          divname.classList.add("px-2")
+
+          let divaddbtn = document.createElement("button")
+          divaddbtn.innerHTML = "+"
+          divaddbtn.classList.add("mx-2", "px-2", "bg-blue-500", "hover:bg-blue-700", "text-white", "font-bold")
+          divaddbtn.addEventListener("click", function () {
+            obj.inc()
+            updateSideBar()
+          })
+
+          let divcount = document.createElement("div")
+          divcount.innerHTML = obj.count
+          divcount.classList.add("px-2")
+
+          let divrembtn = document.createElement("button")
+          divrembtn.innerHTML = "-"
+          divrembtn.classList.add("mx-2", "px-2", "bg-blue-500", "hover:bg-blue-700", "text-white", "font-bold")
+          divrembtn.addEventListener("click", function () {
+            obj.dec()
+            updateSideBar()
+          })
+
+          let divdelbtn = document.createElement("button")
+          divdelbtn.innerHTML = "🗑"
+          divdelbtn.classList.add("mx-2", "px-2", "bg-blue-500", "hover:bg-blue-700", "text-white", "font-bold")
+          divdelbtn.addEventListener("click", function () {
+            let index = cart.objects.findIndex((objec) => objec.id === obj.id)
+            if (index !== -1) {
+              cart.objects.splice(index, 1)
+            }
+            updateSideBar()
+          })
+
+          div.append(divname)
+          div.append(divaddbtn)
+          div.append(divcount)
+          div.append(divrembtn)
+          div.append(divdelbtn)
+          sb.append(div)
+        }
+
+        let divclearbtn = document.createElement("button")
+        divclearbtn.innerHTML = "Очистить"
+        divclearbtn.classList.add("m-2", "p-2", "bg-blue-500", "hover:bg-blue-700", "text-white", "font-bold")
+        divclearbtn.addEventListener("click", function () {
+          cart.objects.length = 0;
+          updateSideBar();
+        });
+
+        let divdonebtn = document.createElement("button")
+        divdonebtn.innerHTML = "Заказать"
+        divdonebtn.classList.add("m-2", "p-2", "bg-blue-500", "hover:bg-blue-700", "text-white", "font-bold")
+        divdonebtn.addEventListener("click", function () {
+          cart.objects.length = 0;
+          updateSideBar();
+          alert("Успешно!");
+        });
+
+        let price = document.createElement("div")
+        price.classList.add("flex");
+        price.classList.add("flex-row");
+        price.classList.add("product-box");
+        price.innerHTML = "Общая цена: " + cart.calculateTotalPrice();
+
+        if (cart.objects.length > 0) {
+          sb.append(price);
+          sb.append(divclearbtn);
+          sb.append(divdonebtn);
+        }
+      }
+
+      function addProduct(id) {
+        let element = document.getElementById("item-" + id);
+        let name = element.children.item(1).innerHTML;
+        let price = element.children.item(2).innerHTML;
+        let newProduct = new Product(id, name, price);
+
+        cart.addObject(newProduct);
+        updateSideBar();
+      }
+    </script>
+  </body>
+</html>

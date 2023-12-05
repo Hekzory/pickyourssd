@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>PickYourSSD</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,500,700" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+  </head>
+  <body class="text-gray-700 bg-zinc-100 website-grid-container-nosb" style="font-family: 'Source Sans Pro', sans-serif">
+    <div class="mx-auto px-6 py-4 flex justify-center items-center fixed-nav website-grid-logo">
+      <a href="#" class="flex items-center">
+        <img src="icons/highres.png" class="h-8 mr-3" alt="Логотип" />
+        <h1 id="main-title" class="font-bold text-2xl lg:text-4xl">PickYourSSD</h1>
+      </a>
+    </div>
+    <nav class="mx-auto px-6 py-4 flex justify-center items-center fixed-nav website-grid-header">
+      <div class="lg:block">
+        <ul class="inline-flex">
+          <li>
+            <a class="px-4 hover:text-gray-800" href="index.html"><button class="bg-transparent hover:bg-blue-700 hover:text-white font-bold py-2 px-4 rounded-full focus:ring active:bg-blue-500">Главная</button></a>
+          </li>
+          <li>
+            <a class="px-4 hover:text-gray-800" href="features.html"><button class="bg-transparent hover:bg-blue-700 hover:text-white font-bold py-2 px-4 rounded-full focus:ring active:bg-blue-500">Узнать</button></a>
+          </li>
+          <li>
+            <a class="px-4 hover:text-gray-800" href="cart.html"><button class="bg-transparent hover:bg-blue-700 hover:text-white font-bold py-2 px-4 rounded-full focus:ring active:bg-blue-500">Купить</button></a>
+          </li>
+          <li>
+            <a class="px-4 hover:text-gray-800" href="about.html"><button class="bg-transparent hover:bg-blue-700 hover:text-white font-bold py-2 px-4 rounded-full focus:ring active:bg-blue-500">О проекте</button></a>
+          </li>
+          <li>
+            <a class="px-4 hover:text-gray-800" href="contact.html"><button class="bg-transparent hover:bg-blue-700 hover:text-white font-bold py-2 px-4 rounded-full focus:ring active:bg-blue-500">Связь</button></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="container my-2 mx-auto flex flex-col min-h-screen website-grid-content">
+      <section class="my-auto first-card-layout p-4">
+        <div class="first-card-item linear-red-orange">
+          <div class="overlay">
+            <h2 class="p-4 font-bold text-xl">Особенности SSD</h2>
+            <p class="p-2">Перейдите, чтобы больше узнать об особенностях твердотельных накопителей</p>
+            <a href="features.html">
+              <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded m-2">Перейти</button>
+            </a>
+          </div>
+        </div>
+
+        <div class="first-card-item linear-blue-purple">
+          <div class="overlay">
+            <h2 class="p-4 font-bold text-xl">О проекте</h2>
+            <p class="p-2">Перейдите, чтобы больше узнать о проекте</p>
+            <a href="about.html">
+              <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded m-2">Перейти</button>
+            </a>
+          </div>
+        </div>
+
+        <div class="first-card-item linear-lime-blue">
+          <div class="overlay">
+            <h2 class="p-4 font-bold text-xl">Купить</h2>
+            <p class="p-2">Перейдите, чтобы купить SSD</p>
+            <a href="cart.html">
+              <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded m-2">Перейти</button>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-gray-200 footer-grid-container website-grid-footer" id="footer">
+      <div class="footer-about">
+        <h2 class="mb-6 text-lg font-bold text-gray-900 uppercase">О нас</h2>
+        <p class="text-gray-500 font-medium">Наш сайт предоставляет возможность узнать об особенностях твердотельных накопителей, а также осуществлять покупки.</p>
+      </div>
+      <div class="footer-links">
+        <h2 class="mb-6 text-lg font-bold text-gray-900 uppercase">Ссылки</h2>
+        <ul class="text-gray-500 font-medium">
+          <li class="my-2">
+            <a href="about.html" class="hover:underline">О нас</a>
+          </li>
+          <li class="my-2">
+            <a href="contact.html" class="hover:underline">Контакты</a>
+          </li>
+          <li class="my-2">
+            <a href="features.html" class="hover:underline">Узнать больше</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-adv">
+        <h2 class="mb-6 text-lg font-bold text-gray-900 uppercase">Партнёры</h2>
+        <ul class="text-gray-500 font-medium">
+          <li class="my-2">
+            <a href="#" class="hover:underline">Место для рекламы 1</a>
+          </li>
+          <li class="my-2">
+            <a href="#" class="hover:underline">Место для рекламы 2</a>
+          </li>
+          <li class="my-2">
+            <a href="#" class="hover:underline">Место для рекламы 3</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h2 class="mb-6 text-lg font-bold text-gray-900 uppercase">Связь</h2>
+        <div class="flex justify-start items-center">
+          <a href="https://github.com/hekzory" class="p-1 text-lg text-gray-700 footer-btn-container"
+            ><i class="fab fa-github footer-btn"><div class="icon-overlay"></div></i
+          ></a>
+          <a href="mailto:ssd@tsv.one" class="p-1 text-lg text-gray-700 footer-btn-container"
+            ><i class="fas fa-envelope footer-btn"><div class="icon-overlay"></div></i
+          ></a>
+          <a href="contact.html" class="p-1 text-lg text-gray-700 footer-btn-container"
+            ><i class="fas fa-link footer-btn"><div class="icon-overlay"></div></i
+          ></a>
+        </div>
+      </div>
+      <div class="footer-text bg-gray-300">Copyright © PickYourSSD 2023-2023. Все права защищены.</div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>PickYourSSD</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,500,700" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+  </head>
+  <body class="text-gray-700 bg-zinc-100 website-grid-container-nosb" style="font-family: 'Source Sans Pro', sans-serif">
+    <div class="mx-auto px-6 py-4 flex justify-center items-center fixed-nav website-grid-logo">
+      <a href="#" class="flex items-center">
+        <img src="icons/highres.png" class="h-8 mr-3" alt="Логотип" />
+        <h1 id="main-title" class="font-bold text-2xl lg:text-4xl">PickYourSSD</h1>
+      </a>
+    </div>
+    <nav class="mx-auto px-6 py-4 flex justify-center items-center fixed-nav website-grid-header">
+      <div class="lg:block">
+        <ul class="inline-flex">
+          <li>
+            <a class="px-4 hover:text-gray-800" href="index.html"><button class="bg-transparent hover:bg-blue-700 hover:text-white font-bold py-2 px-4 rounded-full focus:ring active:bg-blue-500">Главная</button></a>
+          </li>
+          <li>
+            <a class="px-4 hover:text-gray-800" href="features.html"><button class="bg-transparent hover:bg-blue-700 hover:text-white font-bold py-2 px-4 rounded-full focus:ring active:bg-blue-500">Узнать</button></a>
+          </li>
+          <li>
+            <a class="px-4 hover:text-gray-800" href="cart.html"><button class="bg-transparent hover:bg-blue-700 hover:text-white font-bold py-2 px-4 rounded-full focus:ring active:bg-blue-500">Купить</button></a>
+          </li>
+          <li>
+            <a class="px-4 hover:text-gray-800" href="about.html"><button class="bg-transparent hover:bg-blue-700 hover:text-white font-bold py-2 px-4 rounded-full focus:ring active:bg-blue-500">О проекте</button></a>
+          </li>
+          <li>
+            <a class="px-4 hover:text-gray-800" href="contact.html"><button class="bg-transparent hover:bg-blue-700 hover:text-white font-bold py-2 px-4 rounded-full focus:ring active:bg-blue-500">Связь</button></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="container mx-auto flex flex-col min-h-screen p-4 website-grid-content">
+      <section class="my-auto form-container">
+        <div class="w-full glassmorph-bg-white rounded-lg shadow md:mt-0 sm:max-w-md xl:p-0">
+          <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
+            <form class="space-y-4 md:space-y-6 contact-form-grid-container" action="#">
+              <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl contact-form-header">Обратная связь</h1>
+              <div class="relative contact-form-mail">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="w-full block py-2 px-0 text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                  placeholder=""
+                  required="" />
+                <label
+                  for="email"
+                  class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                  >Ваша почта</label
+                >
+              </div>
+              <div class="relative contact-form-phone">
+                <input
+                  type="text"
+                  name="phone"
+                  id="phone"
+                  class="w-full block py-2 px-0 text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                  placeholder=""
+                  required="" />
+                <label
+                  for="phone"
+                  class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                  >Ваш телефон</label
+                >
+              </div>
+              <div class="relative contact-form-name">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="w-full block py-2 px-0 text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                  placeholder=""
+                  required="" />
+                <label
+                  for="name"
+                  class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                  >Ваше имя</label
+                >
+              </div>
+              <div class="relative contact-form-lastname">
+                <input
+                  type="text"
+                  name="lastname"
+                  id="lastname"
+                  class="w-full block py-2 px-0 text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                  placeholder=""
+                  required="" />
+                <label
+                  for="lastname"
+                  class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                  >Ваша фамилия</label
+                >
+              </div>
+              <div class="flex items-start contact-form-consent">
+                <div class="flex items-center h-5">
+                  <input id="terms" aria-describedby="terms" type="checkbox" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300" required="" />
+                </div>
+                <div class="ml-3 text-sm">
+                  <label for="terms" class="font-light text-gray-500">Я согласен на <a class="font-medium text-primary-600 hover:underline" href="#">обработку персональных данных</a></label>
+                </div>
+              </div>
+              <button type="submit" class="contact-form-submit w-full text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-gray-200 footer-grid-container website-grid-footer" id="footer">
+      <div class="footer-about">
+        <h2 class="mb-6 text-lg font-bold text-gray-900 uppercase">О нас</h2>
+        <p class="text-gray-500 font-medium">Наш сайт предоставляет возможность узнать об особенностях твердотельных накопителей, а также осуществлять покупки.</p>
+      </div>
+      <div class="footer-links">
+        <h2 class="mb-6 text-lg font-bold text-gray-900 uppercase">Ссылки</h2>
+        <ul class="text-gray-500 font-medium">
+          <li class="my-2">
+            <a href="about.html" class="hover:underline">О нас</a>
+          </li>
+          <li class="my-2">
+            <a href="contact.html" class="hover:underline">Контакты</a>
+          </li>
+          <li class="my-2">
+            <a href="features.html" class="hover:underline">Узнать больше</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-adv">
+        <h2 class="mb-6 text-lg font-bold text-gray-900 uppercase">Партнёры</h2>
+        <ul class="text-gray-500 font-medium">
+          <li class="my-2">
+            <a href="#" class="hover:underline">Место для рекламы 1</a>
+          </li>
+          <li class="my-2">
+            <a href="#" class="hover:underline">Место для рекламы 2</a>
+          </li>
+          <li class="my-2">
+            <a href="#" class="hover:underline">Место для рекламы 3</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h2 class="mb-6 text-lg font-bold text-gray-900 uppercase">Связь</h2>
+        <div class="flex justify-start items-center">
+          <a href="https://github.com/hekzory" class="p-1 text-lg text-gray-700 footer-btn-container"
+            ><i class="fab fa-github footer-btn"><div class="icon-overlay"></div></i
+          ></a>
+          <a href="mailto:ssd@tsv.one" class="p-1 text-lg text-gray-700 footer-btn-container"
+            ><i class="fas fa-envelope footer-btn"><div class="icon-overlay"></div></i
+          ></a>
+          <a href="contact.html" class="p-1 text-lg text-gray-700 footer-btn-container"
+            ><i class="fas fa-link footer-btn"><div class="icon-overlay"></div></i
+          ></a>
+        </div>
+      </div>
+      <div class="footer-text bg-gray-300">Copyright © PickYourSSD 2023-2023. Все права защищены.</div>
+    </footer>
+  </body>
+</html>
