@@ -546,7 +546,6 @@ textarea {
 
 .website-grid-header {
   grid-area: header;
-  height: 10vh;
 }
 
 .website-grid-sidebar {
@@ -631,8 +630,52 @@ textarea {
   }
 }
 
+@media (max-width: 600px) {
+  .website-grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vh 25vh auto auto auto;
+    grid-template-areas:
+      "logo"
+      "header"
+      "sidebar"
+      "content"
+      "footer";
+    gap: 5px 5px;
+  }
+
+  .website-grid-container-nosb {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vh 25vh auto auto;
+    grid-template-areas:
+      "logo"
+      "header"
+      "content"
+      "footer";
+    gap: 5px 5px;
+  }
+}
+
 .product-box {
   background: white;
   padding: 0.75em;
   margin: 0.2em;
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 600px) {
+  .nav-items {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-items > li {
+    padding: 0.25em;
+    text-align: center;
+  }
 }
