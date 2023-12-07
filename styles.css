@@ -626,7 +626,7 @@ textarea {
       "fourth second"
       "third sixth"
       "seventh seventh";
-    gap: 10px 10px;
+    gap: 5px 5px;
   }
 }
 
@@ -634,7 +634,7 @@ textarea {
   .website-grid-container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 10vh 25vh auto auto auto;
+    grid-template-rows: 10vh 30vh auto auto auto;
     grid-template-areas:
       "logo"
       "header"
@@ -647,13 +647,18 @@ textarea {
   .website-grid-container-nosb {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 10vh 25vh auto auto;
+    grid-template-rows: 10vh 30vh auto auto;
     grid-template-areas:
       "logo"
       "header"
       "content"
       "footer";
     gap: 5px 5px;
+  }
+
+  .feature-grid-item {
+    min-height: 7vh;
+    padding: 0.5em;
   }
 }
 
